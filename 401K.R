@@ -1,0 +1,7 @@
+library(Rcmdr)
+attach(Dataset401K)
+names(Dataset401K)<-c("taxap","taxcont","totpart","toteleg","idade","totfirma","unico","logtotfirma")
+View(Dataset401K)
+summary(Dataset401K)
+lm(taxap~taxcont)
+summary(lm(taxap~taxcont))
